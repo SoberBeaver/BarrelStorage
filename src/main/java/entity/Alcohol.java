@@ -1,15 +1,10 @@
 package entity;
 
+import lombok.Data;
+
+@Data
 public abstract class Alcohol {
     protected final double alcoholByVolume;
-
-    protected Alcohol(double alcoholByVolume) {
-        this.alcoholByVolume = alcoholByVolume;
-    }
-
-    public double getAlcoholByVolume() {
-        return alcoholByVolume;
-    }
 
     @Override
     public String toString() {
